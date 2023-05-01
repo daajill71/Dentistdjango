@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Set an Appointment {% endblock %}
+{% block meta_viewport %} Appointment {% endblock %}
+
+{% block content %}
+
+
+
+
+    <div class="site-blocks-cover inner-page" style="background-image: url('static/website/images/hero_bg_1.jpg');" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+           
+            <h1><strong>Appointment Details</strong></h1>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+<br/><br/>
+
+
+<center>
+
+	<h1><strong>Review Your Information</strong></h3>
+	<strong> Your First Name: </strong> {{ fname }} <br/>
+	<strong> Your Last Name: </strong> {{ lname }} <br/>
+	<strong> Your Email: </strong> {{ email }} <br/>
+	<strong> Appointment Date: </strong>{{ date }} <br/>
+	<strong> Appointment Notes: </strong>{{ note }} <br/>
+	<strong> Your Treatment Option : </strong> {{ treatment}} <br/>
+
+
+<strong> Note: </strong> This appointment has not been set yet. We will contact you shortly via telephone to confirm your appointment. 
+
+</center>	
+
+
+
+<br/><br/>
+
+    
+    <div class="promo py-5 bg-primary">
+      <div class="container text-center">
+        <span class="d-block h4 mb-3 font-weight-light text-white">Promo For Tooth Cleaning from <del>$140.00</del> now <strong class="font-weight-bold">$50.00</strong></span>
+        <div id="date-countdown" class="mt-0 mb-2"></div>
+      </div>
+    </div>
+    
+    
+
+
+{% endblock %}
+
+
+
